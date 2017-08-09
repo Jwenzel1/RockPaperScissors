@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>RPS</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col l6">
+
+          <div class="card blue-grey darken-1">
+            <div id="player1" class="card-content white-text center-align">
+              <form onSubmit="return false;">
+                <input placeholder="Your Name Here" id="player1NameInput" type="text">
+                <button type="button" class="black-text submit" data-player=1>submit</button>
+              </form>
+              <div class="hidden">
+                <span class="card-title" id="player1Name">Player 1</span>
+                <button class="btn red darken-1">Rock</button>
+                <button class="btn green">Paper</button>
+                <button class="btn blue">Scissors</button>
+                <p id="player1Info"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col l6">
+
+          <div class="card blue-grey darken-1">
+            <div id="player2" class="card-content white-text center-align">
+              <form onSubmit="return false;">
+                <input placeholder="Your Name Here" id="player2NameInput" type="text">
+                <button type="button" class="black-text submit" data-player=2>submit</button>
+              </form>
+              <div class="hidden">
+                <span class="card-title" id="player2Name">Player 2</span>
+                <button class="btn red darken-1">Rock</button>
+                <button class="btn green">Paper</button>
+                <button class="btn blue">Scissors</button>
+                <p id="player2Info"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/javascript/script.js">
+
+    </script>
+  </body>
+</html>
