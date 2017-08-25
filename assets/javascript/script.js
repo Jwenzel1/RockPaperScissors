@@ -191,7 +191,9 @@ $(".submit").on("click", function(event){
 });
 
 databaseRef.ref("/messages").on("child_added", function(snapshot){
+  console.log("again");
   putMessage(snapshot.val());
+  databaseRef.ref("/messages").remove();
 });
 
 $("#sendMessage").on("click", function(){
